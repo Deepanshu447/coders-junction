@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page  Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #1f2028;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        .header-div {
+            height: 180px;
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'poppins', sans-serif;
+        }
+
+        nav ul li {
+            list-style: none;
+            font-size: 1.3rem;
+            padding: 10px 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #64748b;
+            transition: 0.5s;
+            padding-bottom: 3px;
+            position: relative;
+        }
+
+        .active {
+            color: white;
+            border-bottom: 3px solid white;
+            padding-bottom: 3px;
+        }
+
+        nav ul li .hoverEffect::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: white;
+            /* Change this to your desired border color */
+            transition: width 0.3s ease;
+            /* Transition duration and easing */
+        }
+
+        #hide-or-Show {
+            font-size: 2rem;
+            color: white;
+            font-weight: 600;
+            display: none;
+        }
+
+        nav ul li a:hover {
+            color: white;
+        }
+
+        nav ul li .hoverEffect:hover::after {
+            width: 100%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        .name h1 {
+            font-size: 1.7rem;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        /* ------------------mainReactClean-Code-PageOne-------------- */
+    </style>
+</head>
+
+<body>
+
+    <!-- Header  section   -->
+    <section>
+        <div class="header-div">
+            <nav>
+                <div class="name">
+                    <h1> CodersJunction</h1>
+                </div>
+                <ul>
+                    <li><a href="./index.html" class="active">Blog</a></li>
+                    <li><a href="./AboutUs.html" class="hoverEffect">About</a></li>
+                    <li><a href="./ContactUs.html" class="hoverEffect">Contact</a></li>
+                    <li><a href="./Project.html" class="hoverEffect">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <center><h1 style="color: white;">this is Project Page </h1></center>
+</body>
+
+</html>
